@@ -1,0 +1,19 @@
+image: atlassian/default-image:3
+
+pipelines:
+  branches:
+    feature/versioning:
+      - step:
+          name: 'upload version updater to S3'
+          script:
+            - mkdir updater
+            - mv updater.json updater
+            - pipe: atlassian/aws-s3-deploy:0.2.4
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_DEV
+                ACL: "public-read"
+                LOCAL_PATH: "./updater"
+          

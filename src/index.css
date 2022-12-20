@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700;800&display=swap');
+
+@font-face {
+    font-family: "Stream";
+    src: local("Stream"),
+      url("./assets/fonts/mainReg.otf") format("truetype");
+}
+@font-face {
+    font-family: "StreamB1";
+    src: local("Stream"),
+      url("./assets/fonts/mainBold.otf") format("truetype");
+}
+@font-face {
+    font-family: "StreamB2";
+    src: local("Stream"),
+      url("./assets/fonts/mainBlack.otf") format("truetype");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow: hidden;
+    --pri-1: #9DC107;
+    --pri-2: #499925;
+    --pri-3: #28600c;
+
+    --grey-1: #d2d2d2
+}
+
+.fileInput::file-selector-button{
+  width: 16rem;
+  color: transparent;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.375rem;
+  margin: 2rem 0;
+  background-color: transparent;
+  border: 2px solid var(--pri-2);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  
+}

@@ -1,0 +1,7 @@
+{
+  "url": "https://s3.console.aws.amazon.com/s3/object/explore-stream-app?region=us-east-1&prefix=explorestream_0.1.0_amd64.AppImage.tar.gz",
+  "version": "0.2.0",
+  "notes": "Theses are some release notes",
+  "pub_date": "2020-09-18T12:29:53+01:00",
+  "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTUCtnb3Y4RERDU1pMZ3paeGl1M3Y1QzJEYlFrREliRTRsZ21PaHg2OEgzSGlnWk42aHlHWUZUTCs4SUZnMEh1Q09Ia3ZsYlZGMmRXY2hiWkxpdThxTmk4M1RKaTRpVVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNjcxNDg4MzY2CWZpbGU6ZXhwbG9yZXN0cmVhbV8wLjEuMF9hbWQ2NC5BcHBJbWFnZS50YXIuZ3oKTUZ1a1IxYnpVYXl6RHN3bGc4emdLeW1taEZ3WVpYUTJXMGVrRFk5RnVESUtDMlIydzNHWlZ6UEZCUFVMY3g2ZlFMdkhydEgwSjdCeUVua2dWNThwQXc9PQo="
+}

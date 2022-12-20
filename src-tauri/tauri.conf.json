@@ -1,0 +1,79 @@
+{
+  "$schema": "..\\node_modules/@tauri-apps/cli\\schema.json",
+  "build": {
+    "beforeBuildCommand": "npm run-script build",
+    "beforeDevCommand": "npm run dev",
+    "devPath": "http://localhost:3000",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "explorestream",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "shell": {
+        "execute": true
+      }
+    },
+    "bundle": {
+      "active": true,
+      "category": "DeveloperTool",
+      "copyright": "",
+      "deb": {
+        "depends": []
+      },
+      "externalBin": [],
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "identifier": "explorestream",
+      "longDescription": "",
+      "macOS": {
+        "entitlements": null,
+        "exceptionDomain": "",
+        "frameworks": [],
+        "providerShortName": null,
+        "signingIdentity": null
+      },
+      "resources": [],
+      "shortDescription": "",
+      "targets": "all",
+      "windows": {
+        "certificateThumbprint": null,
+        "digestAlgorithm": "sha256",
+        "timestampUrl": "",
+        "webviewInstallMode": {
+          "type": "offlineInstaller"
+        }
+      }
+    },
+    "security": {
+      "csp": null
+    },
+    "updater": {
+      "active": true,
+      "endpoints": [
+          "https://devapi.ocbstream.com/integration/releases/{{target}}/{{current_version}}"
+      ],
+      "dialog": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDQ5QzIzMEYwMkYwQUZBOEYKUldTUCtnb3Y4RERDU1ZJMldRQW1FR1JDRVhqczlaSm5zejZ5czB4N3cwcXV5V2tPalU0L0ZCdm4K"
+  },
+    "windows": [
+      {
+        "fullscreen": true,
+        "height": 600,
+        "resizable": true,
+        "title": "Explore Stream",
+        "width": 800,
+        "decorations": false
+      }
+    ]
+  }
+}
+        
